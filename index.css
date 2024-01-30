@@ -506,6 +506,76 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
+/* ----- Welcome ----- */
+/* --------------------------------------- */
+
+.welcome__box {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .welcome__box {
+        align-items: initial;
+        flex-direction: column-reverse;
+    }
+}
+
+.welcome__box:not(:last-child) {
+    margin-bottom: 25rem;
+}
+
+@media(max-width: 500px) {
+    .welcome__box:not(:last-child) {
+        margin-bottom: 20rem;
+    }
+}
+
+.welcome__links {
+    display: flex;
+    align-items: center;
+}
+
+.welcome__text {
+    flex: 0 0 40%; /* Adjusted flex value for text */
+}
+
+.welcome__list {
+    /* list-style-type: square; */
+    list-style-position: inside;
+    margin-bottom: var(--gutter-normal);
+}
+
+.welcome__code {
+    display: block;
+    height: 3rem;
+    margin-left: var(--gutter-normal);
+    transition: all .3s;
+}
+
+    .welcome__code:hover {
+        transform: scale(1.2);
+    }
+
+.welcome__image-box {
+    flex: 0 0 60%; /* Adjusted flex value for image */
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .welcome__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .welcome__code {
+        height: 4rem;
+    }
+}
+
+/* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
 

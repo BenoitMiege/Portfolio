@@ -537,7 +537,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .welcome__text {
-    flex: 0 0 40%; /* Adjusted flex value for text */
+    flex: 0 0 50%; /* Adjusted flex value for text */
 }
 
 .welcome__list {
@@ -558,7 +558,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 
 .welcome__image-box {
-    flex: 0 0 60%; /* Adjusted flex value for image */
+    flex: 0 0 50%; /* Adjusted flex value for image */
     margin-bottom: var(--gutter-normal);
 }
 

@@ -589,6 +589,10 @@ body:not(.user-is-tabbing) a:focus {
     max-width: 18rem;
 }
 
+.client__logos h3 {
+    margin-bottom: 1rem; /* Add margin-bottom to create space */
+}
+
 @media(max-width: 1240px) {
     .client__logos {
         overflow-x: scroll;

@@ -488,13 +488,31 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
-.projets__image-box,
-.projets__video-box {
+.projets__image-box {
     margin-bottom: var(--gutter-normal);
 }
 
 @media(min-width: 901px) {
-    .projets__image-box,
+    .projets__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
+/* Add styles for video box */
+.projets__video-box {
+    flex: 0 0 40%;
+    margin: 0 0 0 4rem; /* Adjust the margin as needed */
+    max-width: 100%; /* Set maximum width for the video container */
+}
+
+.projets__video-box video {
+    max-width: 100%; /* Set maximum width for the video itself */
+    height: auto;
+    display: block;
+}
+
+@media(min-width: 901px) {
     .projets__video-box {
         flex: 1;
         margin: 0 0 0 10rem;
@@ -505,18 +523,6 @@ body:not(.user-is-tabbing) a:focus {
     .projets__code {
         height: 4rem;
     }
-}
-
-/* Add styles for video box */
-.projets__video-box {
-    flex: 0 0 40%;
-    margin: 0 0 0 4rem; /* Adjust the margin as needed */
-    max-width: 100%; /* Set maximum width for the video container */
-}
-.projets__video-box video {
-    width: 70%;
-    height: auto;
-    display: block;
 }
 
 /* --------------------------------------- */

@@ -509,7 +509,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Add styles for video box */
 .projets__video-box {
-    flex: 1;
+    flex: 0 0 40%;
     margin: 0 0 0 4rem; /* Adjust the margin as needed */
     max-width: 100%; /* Set maximum width for the video container */
 }

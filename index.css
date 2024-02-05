@@ -511,13 +511,13 @@ body:not(.user-is-tabbing) a:focus {
 .projets__video-box {
     flex: 1;
     margin: 0 0 0 10rem; /* Adjust the margin as needed */
+    max-width: 100%; /* Set maximum width for the video container */
 }
-
-    .projets__video-box video {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.projets__video-box video {
+    width: 70%;
+    height: auto;
+    display: block;
+}
 
 /* --------------------------------------- */
 /* ----- Welcome ----- */

@@ -488,12 +488,14 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
-.projets__image-box {
+.projets__image-box,
+.projets__video-box {
     margin-bottom: var(--gutter-normal);
 }
 
 @media(min-width: 901px) {
-    .projets__image-box {
+    .projets__image-box,
+    .projets__video-box {
         flex: 1;
         margin: 0 0 0 10rem;
     }
@@ -504,6 +506,18 @@ body:not(.user-is-tabbing) a:focus {
         height: 4rem;
     }
 }
+
+/* Add styles for video box */
+.projets__video-box {
+    flex: 1;
+    margin: 0 0 0 10rem; /* Adjust the margin as needed */
+}
+
+    .projets__video-box video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
 /* --------------------------------------- */
 /* ----- Welcome ----- */

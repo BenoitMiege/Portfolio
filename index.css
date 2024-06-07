@@ -525,6 +525,27 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* In your CSS file */
+.youtube-video {
+    margin-bottom: var(--gutter-normal);
+    /* Add any additional styling you need for the section */
+}
+
+.youtube-video__box {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+}
+
+.youtube-video__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* --------------------------------------- */
 /* ----- Welcome ----- */
 /* --------------------------------------- */
